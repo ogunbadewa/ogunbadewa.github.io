@@ -1,0 +1,125 @@
+body html{
+    height: 100vh;
+    width:100vh;
+    margin:0%;
+    padding:0%;
+    overflow: hidden;
+}
+#videocontainer{
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+    background: linear-gradient(135deg, rgba(255, 220, 130, 0.2), rgba(255, 255, 255, 0.4));
+    position: absolute
+    z-index: -1;
+    
+}
+#video{
+    height:100vh;
+    width:105%;
+    object-fit: cover;
+    padding:0px;
+    margin:0px;
+}
+#navigationbar{
+    position: relative;
+}
+/*#navigationbar img{
+    float:left;
+    position: relative;
+    border:solid;
+    width:10%;
+    height: 10%;
+    border-radius: 20px;
+    border-width: 0px;
+}
+*/
+
+#navlist{
+    position: fixed;
+    right: 0px;
+    top: 10px;
+
+}
+#navigationbar li{
+    float: left;
+    margin-right: 25px;
+    padding: 2px;
+    list-style: none;
+}
+#navigationbar li:hover{
+    transform: scaleX(2.0);
+    transform: scaleY(1.4);
+
+}
+#navigationbar li a:hover{
+    color:blue;
+}
+#navigationbar li a{
+    text-decoration: none; 
+    color: #ffcc00;
+    font-weight: 5px;
+    font-size: 20px;
+    transition-property: transform;
+    transition-duration: 0.8s;
+}
+
+#name_and_student{
+    position: relative;
+    border:none;
+    top: -60vh;
+    color: orange;
+    float:left;
+    width:49%;
+    height: 50%;
+}
+
+
+
+#selfie{
+    height:100%;
+    width:100%;
+}
+#slider{
+    width: 50vw;
+    height: 50vh;
+    overflow:hidden;
+
+}
+#figure{
+    width:500%;
+    height:100%;
+
+}
+#slider img{
+    width: 20%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    background-color: red;
+    animation-name: activities;
+    animation-duration: 20s;
+    animation-timing-function: cubic-bezier(1, -0.17, 1, -0.17);
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    /*animation-delay: 4s;*/
+    float:left;
+
+}
+@keyframes activities{
+    0%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-200%);
+    }
+    60%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-400%);
+    }
+}
